@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nike Site</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes bounceCard {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+      100% { transform: scale(1); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 1s ease-out;
+    }
+    .animate-bounce-card:hover {
+      animation: bounceCard 0.4s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans text-[17px]">
+  <!-- Navbar -->
+  <header class="bg-black text-white">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <img class="w-40"  src="new-Nike-logo-white-png-large-size.png" alt="">
+      <nav class="space-x-6 text-[16px]">
+        <a href="https://www.nike.com" target="_blank" class="hover:text-gray-400 transition">Home</a>
+        <a href="https://www.nike.com" target="_blank" class="hover:text-gray-400 transition">About</a>
+        <button class="bg-white text-black px-4 py-1 rounded hover:bg-gray-200 transition">Sign In</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col-reverse md:flex-row items-center justify-center py-16 px-6 md:px-20 bg-gray-50">
+    <div class="md:w-1/2 space-y-5 animate-fade-in">
+      <h2 class="text-5xl md:text-6xl font-extrabold">Just Do It</h2>
+      <p class="text-lg text-gray-600" style="margin-bottom: 30px;">Discover your power with Nike. Step into comfort and performance with our latest collection.</p>
+      <a href="about.html" target="_blank" class="px-7 py-3 bg-black text-white rounded-xl hover:bg-gray-800 m-top transition">Shop Now</a>
+    </div>
+    <div class="md:w-1/2 mb-8 md:mb-0 animate-fade-in">
+      <img src="blue.avif" alt="Nike Logo" class="w-full max-w-sm mx-auto" />
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section class="bg-white py-16 px-6 md:px-20">
+    <h3 class="text-3xl font-bold mb-12 text-center">Popular Sneakers</h3>
+    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+      <!-- Cards (8 total) -->
+      <!-- Repeat for each product -->
+      <div class="bg-gray-100 rounded-xl shadow-md transition p-4 animate-bounce-card">
+        <img  src="blue.avif" alt="Air Max 90" class="w-full h-48 object-contain" />
+        <h4 class="text-xl font-semibold mt-4">Nike Air Max 90</h4>
+        <p class="text-gray-600 text-sm">Classic design meets modern comfort.</p>
+        <p class="mt-2 font-bold">$120</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-xl shadow-md transition p-4 animate-bounce-card">
+        <img src="black wight.jpg" />
+        <h4 class="text-xl font-semibold mt-4">Nike Air Force 1</h4>
+        <p class="text-gray-600 text-sm">Timeless street style. A fan-favorite.</p>
+        <p class="mt-2 font-bold">$110</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-xl shadow-md transition p-4 animate-bounce-card">
+        <img src="wight.jpg" alt="Air Jordan 1 Mid" class="w-full h-48 object-contain" />
+        <h4 class="text-xl font-semibold mt-4">Air Jordan 1 Mid</h4>
+        <p class="text-gray-600 text-sm">Bold and iconic. Legendary style.</p>
+        <p class="mt-2 font-bold">$130</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-xl shadow-md transition p-4 animate-bounce-card">
+        <img src="dark black.jpg" alt="Air Max Plus" class="w-full h-48 object-contain" />
+        <h4 class="text-xl font-semibold mt-4">Nike Air Max Plus</h4>
+        <p class="text-gray-600 text-sm">Futuristic style with tuned cushioning.</p>
+        <p class="mt-2 font-bold">$160</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-xl shadow-md transition p-4 animate-bounce-card">
+        <img src="black wight red.jpg" alt="Air Jordan 4" class="w-full h-48 object-contain" />
+        <h4 class="text-xl font-semibold mt-4">Air Jordan 4 Retro</h4>
+        <p class="text-gray-600 text-sm">Classic basketball heritage and comfort.</p>
+        <p class="mt-2 font-bold">$210</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-xl shadow-md transition p-4 animate-bounce-card">
+        <img src="aqua.webp" alt="Pegasus 40" class="w-full h-48 object-contain" />
+        <h4 class="text-xl font-semibold mt-4">Nike Pegasus 40</h4>
+        <p class="text-gray-600 text-sm">Everyday responsive running shoe.</p>
+        <p class="mt-2 font-bold">$140</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-xl shadow-md transition p-4 animate-bounce-card">
+        <img src="orange wight.jpg" alt="Air Max 270" class="w-full h-48 object-contain" />
+        <h4 class="text-xl font-semibold mt-4">Nike Air Max 270</h4>
+        <p class="text-gray-600 text-sm">Big Air unit for all-day comfort.</p>
+        <p class="mt-2 font-bold">$150</p>
+      </div>
+
+      <div class="bg-gray-100 rounded-xl shadow-md transition p-4 animate-bounce-card">
+        <img src="br4ight blue.jpg" />
+        <h4 class="text-xl font-semibold mt-4">Nike Vapormax 2023</h4>
+        <p class="text-gray-600 text-sm">Lightweight and eco-friendly innovation.</p>
+        <p class="mt-2 font-bold">$210</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white mt-20 py-8">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="text-sm">Made in America</p>
+      <p class="text-xs mt-2">Visit Nike's main website to see all products.
+        <br>
+        S.S.J
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
